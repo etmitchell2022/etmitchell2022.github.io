@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import project1 from "../../components/App/assets/images/projects/project1.jpg"
+import regalia from "../../images/regaliaDash.png"
 import project2 from "../../components/App/assets/images/projects/project2.jpg"
 import project3 from "../../components/App/assets/images/projects/project3.jpg"
 import project4 from "../../components/App/assets/images/projects/project4.jpg"
@@ -16,11 +16,11 @@ const Projects = () => {
         <div className="row">
           <div className="col-sm-6 col-lg-7">
             <div className="projects-item">
-              <img src={project1} alt="Projects" />
+              <img src={regalia} alt="Projects" />
               <div className="inner">
                 <div className="inner">
                   <h3>
-                    <Link to="/work-details">Furniture Website</Link>
+                    <Link to="/regalia">Regalia Share Capstone Project</Link>
                   </h3>
                   <span>Logo</span>
                 </div>

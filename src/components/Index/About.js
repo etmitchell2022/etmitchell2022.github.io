@@ -16,14 +16,9 @@ const About = () => {
             <div className="about-content">
               <div className="section-title three">
                 <span className="sub-title">ABOUT ME</span>
-                <h2>
-                  I Am A Web Developer, Specialized In WordPress, PHP,
-                  JavaScript & React
-                </h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, seddiam voluptua. At vero eos et accusam et.
+                  I have always had a passion for technology and I enjoy problem solving. When I graduate
+                  in December, I plan to become a software engineer. I am excited to enter the field and continue learning.
                 </p>
               </div>
 
@@ -33,7 +28,7 @@ const About = () => {
                     <ul>
                       <li>
                         <span>Age:</span>
-                        20 Years
+                        20
                       </li>
                       <li>
                         <span>Website:</span>

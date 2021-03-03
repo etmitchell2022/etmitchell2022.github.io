@@ -1,46 +1,31 @@
-import React from 'react'
+import React from "react"
 
 const Skills = () => {
-    return (
-        <div className="skills-area border-bottom-two ptb-100">
-            <div className="container">
-                <div className="section-title three">
-                    <span className="sub-title">SKILLS</span>
-                </div>
-
-                <div className="skill-wrap">
-                    <div className="skill">
-                        <h3>JAVASCRIPT</h3>
-                        <div className="skill-bar wow fadeInLeftBig">
-                            <span className="skill-count"></span>
-                        </div>
-                    </div>
-
-                    <div className="skill">
-                        <h3>REACT JS</h3>
-                        <div className="skill-bar wow fadeInLeftBig">
-                            <span className="skill-count"></span>
-                        </div>
-                    </div>
-
-                    <div className="skill">
-                        <h3>PYTHON</h3>
-                        <div className="skill-bar wow fadeInLeftBig">
-                            <span className="skill-count"></span>
-                        </div>
-                    </div>
-
-                    <div className="skill">
-                        <h3>NODE JS</h3>
-                    </div>
-
-                    <div className="skill">
-                        <h3>MONGO DB</h3>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="skills-area border-bottom-two ptb-100">
+      <div className="container">
+        <div className="section-title three">
+          <span className="sub-title">SKILLS</span>
         </div>
-    )
+        <div className="skillContainer">
+          <ul className='skill-list'>
+            <li>JAVASCRIPT</li>
+            <li>REACT JS</li>
+            <li>MONGO DB</li>
+            <li>NODE JS</li>
+            <li>EXPRESS JS</li>
+            <li>PHP</li>
+            <li>JAVA</li>
+            <li>PYTHON</li>
+            <li>MYSQL</li>
+            <li>C# (ASP.NET CORE)</li>
+            <li>DOCKER</li>
+            <li>VISUAL STUDIO CODE</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Skills
