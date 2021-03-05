@@ -8,7 +8,7 @@ const Skills = () => {
           <span className="sub-title">SKILLS</span>
         </div>
         <div className="skillContainer">
-          <ul className='skill-list'>
+          <ul className='skill-list arrow'>
             <li>JAVASCRIPT</li>
             <li>REACT JS</li>
             <li>MONGO DB</li>

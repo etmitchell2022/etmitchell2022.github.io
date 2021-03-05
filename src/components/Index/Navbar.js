@@ -14,10 +14,6 @@ const Navbar = () => {
         setCollapsed(!collapsed)
     }
 
-    const toggleModal = () => {
-        setSidebarModal(!sidebarModal)
-    }
-
     React.useEffect(() => {
         let elementId = document.getElementById("navbar");
         document.addEventListener("scroll", () => {

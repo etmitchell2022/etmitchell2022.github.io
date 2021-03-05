@@ -27,8 +27,8 @@ const MainBanner = () => {
               </p>
 
               <div className="banner-btn-area">
-                <AnchorLink href="#contact" className="common-btn three">
-                  Contact Me
+                <AnchorLink href="#portfolio" className="common-btn three">
+                  View My Work
                 </AnchorLink>
               </div>
             </div>
