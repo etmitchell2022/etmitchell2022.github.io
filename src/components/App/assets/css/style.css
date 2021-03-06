@@ -2247,7 +2247,12 @@ button:focus {
 }
 
 .skills-area .skillContainer .skill-list {
+  list-style: none;
   height: 50%;
+}
+
+.skills-area .skillContainer .skill-list li {
+  color: white;
 }
 
 .skills-area .skill-wrap {

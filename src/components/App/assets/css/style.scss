@@ -29,8 +29,10 @@ This files table contents are outlined below>>>>>
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-$common-font: "Open Sans", sans-serif;
-$heading-font: "Poppins", sans-serif;
+$common-font: "Open Sans",
+sans-serif;
+$heading-font: "Poppins",
+sans-serif;
 $all-size: 16px;
 $transition: 0.5s all ease;
 $main-color: #171717;
@@ -50,6 +52,7 @@ body {
   background-color: black;
   font-size: $all-size;
 }
+
 h1,
 h2,
 h3,
@@ -60,9 +63,11 @@ h6 {
   color: $main-color;
   font-family: $heading-font;
 }
+
 p {
   line-height: 1.7;
 }
+
 a {
   transition: $transition;
 
@@ -70,38 +75,48 @@ a {
     text-decoration: none;
   }
 }
+
 img {
   max-width: 100%;
 }
+
 .d-table {
   width: 100%;
   height: 100%;
 }
+
 .d-table-cell {
   vertical-align: middle;
 }
+
 .ptb-100 {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 .pt-100 {
   padding-top: 100px;
 }
+
 .pb-70 {
   padding-bottom: 70px;
 }
+
 .pb-100 {
   padding-bottom: 100px;
 }
+
 button {
   &:focus {
     outline: 0;
   }
 }
+
 .btn.focus,
 .btn:focus {
   box-shadow: none;
 }
+
 .common-btn {
   display: inline-block;
   font-weight: 600;
@@ -122,12 +137,14 @@ button {
     background-color: $orange-color;
     transition: $transition;
     z-index: -1;
+
     border: {
       top: 2px solid $white-color;
       left: 2px solid $white-color;
       bottom: 2px solid $white-color;
     }
   }
+
   &:after {
     position: absolute;
     content: "";
@@ -138,23 +155,27 @@ button {
     background-color: $orange-color;
     transition: $transition;
     z-index: -1;
+
     border: {
       top: 2px solid $white-color;
       right: 2px solid $white-color;
       bottom: 2px solid $white-color;
     }
   }
+
   &:hover {
     color: $white-color;
 
     &:before {
       width: 50%;
     }
+
     &:after {
       width: 50%;
     }
   }
 }
+
 .common-btn.two {
   color: $yellow-color;
   border: 2px solid $yellow-color;
@@ -162,13 +183,16 @@ button {
   &:before {
     background-color: $yellow-color;
   }
+
   &:after {
     background-color: $yellow-color;
   }
+
   &:hover {
     color: $white-color;
   }
 }
+
 .common-btn.three {
   color: $green-color;
   border: 2px solid $green-color;
@@ -179,16 +203,19 @@ button {
     border-left: 2px solid $green-color;
     border-bottom: 2px solid $green-color;
   }
+
   &:after {
     background-color: $green-color;
     border-top: 2px solid $green-color;
     border-right: 2px solid $green-color;
     border-bottom: 2px solid $green-color;
   }
+
   &:hover {
     color: $main-color;
   }
 }
+
 .common-btn.four {
   color: $blue-color;
   border: 2px solid $blue-color;
@@ -196,13 +223,16 @@ button {
   &:before {
     background-color: $blue-color;
   }
+
   &:after {
     background-color: $blue-color;
   }
+
   &:hover {
     color: $white-color;
   }
 }
+
 .common-btn.five {
   color: $pink-color;
   border: 2px solid $pink-color;
@@ -213,16 +243,19 @@ button {
     border-left: 2px solid $pink-color;
     border-bottom: 2px solid $pink-color;
   }
+
   &:after {
     background-color: $pink-color;
     border-top: 2px solid $pink-color;
     border-right: 2px solid $pink-color;
     border-bottom: 2px solid $pink-color;
   }
+
   &:hover {
     color: $white-color;
   }
 }
+
 .common-btn.six {
   color: $white-color;
   border: 2px solid $white-color;
@@ -233,16 +266,19 @@ button {
     border-left: 2px solid $white-color;
     border-bottom: 2px solid $white-color;
   }
+
   &:after {
     background-color: $white-color;
     border-top: 2px solid $white-color;
     border-right: 2px solid $white-color;
     border-bottom: 2px solid $white-color;
   }
+
   &:hover {
     color: $main-color;
   }
 }
+
 .section-title {
   margin-bottom: 40px;
   position: relative;
@@ -267,6 +303,7 @@ button {
       background-color: $orange-color;
     }
   }
+
   h2 {
     margin-bottom: 0;
     font-size: 40px;
@@ -276,11 +313,13 @@ button {
       color: $orange-color;
     }
   }
+
   p {
     margin-top: 12px;
     margin-bottom: 0;
   }
 }
+
 .section-title.two {
   .sub-title {
     color: $yellow-color;
@@ -290,12 +329,14 @@ button {
       display: none;
     }
   }
+
   h2 {
     span {
       color: $yellow-color;
     }
   }
 }
+
 .section-title.three {
   .sub-title {
     color: $green-color;
@@ -304,6 +345,7 @@ button {
       background-color: $green-color;
     }
   }
+
   h2 {
     color: $white-color;
 
@@ -311,10 +353,12 @@ button {
       color: $green-color;
     }
   }
+
   p {
     color: #b7b7b7;
   }
 }
+
 .section-title.four {
   max-width: 735px;
   margin-left: auto;
@@ -328,6 +372,7 @@ button {
     }
   }
 }
+
 .section-title.five {
   max-width: 735px;
   margin-left: auto;
@@ -343,6 +388,7 @@ button {
     }
   }
 }
+
 .section-title.six {
   max-width: 735px;
   margin-left: auto;
@@ -359,6 +405,7 @@ button {
       display: none;
     }
   }
+
   h2 {
     color: $white-color;
 
@@ -367,6 +414,7 @@ button {
     }
   }
 }
+
 .common-right-text {
   position: absolute;
   top: 210px;
@@ -382,6 +430,7 @@ button {
     opacity: 0.1;
     font-size: 130px;
   }
+
   &.two {
     top: 280px;
     right: -250px;
@@ -391,9 +440,11 @@ button {
     }
   }
 }
+
 .border-bottom {
   border-bottom: 1px solid #ececec !important;
 }
+
 .border-bottom-two {
   border-bottom: 1px solid #ececec29 !important;
 }
@@ -419,16 +470,19 @@ button {
       font-weight: 600;
     }
   }
-  .navbar-nav .active > .nav-link,
+
+  .navbar-nav .active>.nav-link,
   .navbar-nav .nav-link.active,
   .navbar-nav .nav-link.show,
-  .navbar-nav .show > .nav-link {
+  .navbar-nav .show>.nav-link {
     color: $orange-color;
   }
+
   .navbar-nav .nav-link:focus,
   .navbar-nav .nav-link:hover {
     color: $orange-color;
   }
+
   .side-nav {
     margin-left: 15px;
 
@@ -444,6 +498,7 @@ button {
       }
     }
   }
+
   &.is-sticky {
     background-color: $main-color;
     padding-top: 10px;
@@ -455,22 +510,26 @@ button {
         color: $white-color;
       }
     }
-    .navbar-nav .active > .nav-link,
+
+    .navbar-nav .active>.nav-link,
     .navbar-nav .nav-link.active,
     .navbar-nav .nav-link.show,
-    .navbar-nav .show > .nav-link {
+    .navbar-nav .show>.nav-link {
       color: $orange-color;
     }
+
     .navbar-nav .nav-link:focus,
     .navbar-nav .nav-link:hover {
       color: $orange-color;
     }
+
     .common-btn {
       &:before {
         border-top: 2px solid $main-color;
         border-left: 2px solid $main-color;
         border-bottom: 2px solid $main-color;
       }
+
       &:after {
         border-top: 2px solid $main-color;
         border-right: 2px solid $main-color;
@@ -493,30 +552,36 @@ button {
     height: 2px;
     display: block;
   }
+
   .top-bar {
     transform: rotate(45deg);
     transform-origin: 10% 10%;
     left: 4px;
     position: relative;
   }
+
   .middle-bar {
     opacity: 0;
     margin: 6px 0;
   }
+
   .bottom-bar {
     transform: rotate(-45deg);
     transform-origin: 10% 90%;
     left: 4px;
     position: relative;
   }
+
   &.collapsed {
     .top-bar {
       transform: rotate(0);
       left: 0;
     }
+
     .middle-bar {
       opacity: 1;
     }
+
     .bottom-bar {
       transform: rotate(0);
       left: 0;
@@ -529,6 +594,7 @@ button {
   .container {
     max-width: 650px;
   }
+
   .main-left-img {
     position: fixed;
     left: 0;
@@ -545,6 +611,7 @@ button {
       display: none;
     }
   }
+
   .main-content {
     padding-left: 500px;
 
@@ -575,6 +642,7 @@ button {
       font-size: 80px;
       margin-bottom: 10px;
     }
+
     p {
       margin-bottom: 25px;
 
@@ -584,6 +652,7 @@ button {
         color: $orange-color;
       }
     }
+
     .banner-btn-area {
       margin-bottom: 25px;
 
@@ -594,24 +663,29 @@ button {
         &:before {
           width: 50%;
         }
+
         &:after {
           width: 50%;
         }
+
         &:hover {
           color: $orange-color;
 
           &:before {
             width: 0;
           }
+
           &:after {
             width: 0;
           }
         }
       }
     }
+
     ul {
       padding: 0;
       margin: 0;
+
       li {
         list-style-type: none;
         display: inline-block;
@@ -620,26 +694,31 @@ button {
         &:last-child {
           margin-right: 0;
         }
+
         &:nth-child(2) {
           a {
             color: #00acee;
           }
         }
+
         &:nth-child(3) {
           a {
             color: #0e76a8;
           }
         }
+
         &:nth-child(4) {
           a {
             color: #053eff;
           }
         }
+
         &:nth-child(5) {
           a {
             color: #ea4c89;
           }
         }
+
         a {
           display: block;
           color: $main-color;
@@ -664,11 +743,13 @@ button {
     .section-title {
       margin-bottom: 20px;
     }
+
     .left {
       ul {
         padding: 0;
         margin: 0;
         list-style-type: none;
+
         li {
           &:last-child {
             margin-bottom: 0;
@@ -676,11 +757,13 @@ button {
         }
       }
     }
+
     .right {
       ul {
         padding: 0;
         margin: 0;
         list-style-type: none;
+
         li {
           &:last-child {
             margin-bottom: 0;
@@ -688,10 +771,12 @@ button {
         }
       }
     }
+
     ul {
       padding: 0;
       margin: 0;
       list-style-type: none;
+
       li {
         list-style-type: none;
         display: block;
@@ -703,6 +788,7 @@ button {
           font-weight: 600;
           margin-right: 3px;
         }
+
         a {
           display: inline-block;
           color: $paragraph-color;
@@ -726,6 +812,7 @@ button {
     right: -175px;
   }
 }
+
 .what-item {
   margin-bottom: 30px;
   text-align: center;
@@ -737,6 +824,7 @@ button {
     font-size: 40px;
     line-height: 40px;
   }
+
   h3 {
     margin-bottom: 10px;
     font-size: 20px;
@@ -749,9 +837,11 @@ button {
       }
     }
   }
+
   p {
     margin-bottom: 12px;
   }
+
   .what-btn {
     display: inline-block;
     color: $orange-color;
@@ -766,6 +856,7 @@ button {
       left: 6px;
       transition: $transition;
     }
+
     &:hover {
       color: $main-color;
 
@@ -785,6 +876,7 @@ button {
     top: 375px;
     right: -310px;
   }
+
   .experience-content {
     .experience-inner {
       margin-bottom: 30px;
@@ -803,27 +895,32 @@ button {
             flex: 0 0 15%;
             max-width: 15%;
           }
+
           &:nth-child(2) {
             flex: 0 0 30%;
             max-width: 30%;
             margin-left: 12px;
           }
+
           &:nth-child(3) {
             flex: 0 0 50%;
             max-width: 50%;
             margin-left: 12px;
           }
+
           span {
             display: inline-block;
             color: $main-color;
             font-weight: 600;
           }
+
           p {
             margin-bottom: 0;
           }
         }
       }
     }
+
     p {
       margin-bottom: 30px;
     }
@@ -847,23 +944,27 @@ button {
     background-color: $orange-color;
     transition: $transition;
   }
+
   &:hover {
     transform: translate(0, -10px);
 
     &:before {
       height: 100%;
     }
+
     .bottom {
       bottom: 0;
       opacity: 1;
       visibility: visible;
     }
   }
+
   .top {
     img {
       width: 100%;
     }
   }
+
   .bottom {
     position: absolute;
     left: 0;
@@ -890,17 +991,20 @@ button {
           }
         }
       }
+
       span {
         font-size: 14px;
         display: block;
         color: $white-color;
       }
     }
+
     .bottom-two {
       p {
         margin-bottom: 15px;
         color: $white-color;
       }
+
       a {
         display: inline-block;
         color: $white-color;
@@ -912,6 +1016,7 @@ button {
           position: relative;
           left: 5px;
         }
+
         &:hover {
           color: $main-color;
         }
@@ -929,6 +1034,7 @@ button {
     top: 265px;
     right: -200px;
   }
+
   .awards-inner {
     margin-bottom: 30px;
 
@@ -946,21 +1052,25 @@ button {
           flex: 0 0 15%;
           max-width: 15%;
         }
+
         &:nth-child(2) {
           flex: 0 0 75%;
           max-width: 75%;
           margin-left: 20px;
         }
+
         h3 {
           font-size: 16px;
           margin-bottom: 3px;
         }
+
         span {
           display: block;
         }
       }
     }
   }
+
   .awards-video {
     margin-bottom: 30px;
     position: relative;
@@ -970,6 +1080,7 @@ button {
     }
   }
 }
+
 .video-wrap {
   z-index: 2;
   position: absolute;
@@ -991,6 +1102,7 @@ button {
     i {
       line-height: 80px;
     }
+
     &:before {
       content: "";
       position: absolute;
@@ -1006,6 +1118,7 @@ button {
       z-index: -1;
       animation: pulse-border 1500ms ease-out infinite;
     }
+
     &:after {
       content: "";
       position: absolute;
@@ -1021,17 +1134,20 @@ button {
       z-index: -1;
       transition: $transition;
     }
+
     &:hover {
       color: $white-color;
 
       &:before {
         background-color: $orange-color;
       }
+
       &:after {
         background-color: $orange-color;
       }
     }
   }
+
   span {
     display: inline-block;
     color: $orange-color;
@@ -1041,11 +1157,13 @@ button {
     margin-left: 25px;
   }
 }
+
 @keyframes pulse-border {
   0% {
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
     opacity: 1;
   }
+
   100% {
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
     opacity: 0;
@@ -1062,6 +1180,7 @@ button {
     right: -100px;
   }
 }
+
 .blog-item {
   margin-bottom: 30px;
   transition: $transition;
@@ -1077,6 +1196,7 @@ button {
       }
     }
   }
+
   .top {
     position: relative;
     margin-bottom: 20px;
@@ -1090,6 +1210,7 @@ button {
         transition: $transition;
       }
     }
+
     h4 {
       max-width: 45px;
       background-color: #f68338;
@@ -1107,6 +1228,7 @@ button {
       }
     }
   }
+
   .bottom {
     h3 {
       margin-bottom: 14px;
@@ -1122,9 +1244,11 @@ button {
         }
       }
     }
+
     p {
       margin-bottom: 15px;
     }
+
     .blog-btn {
       display: inline-block;
       color: $orange-color;
@@ -1136,6 +1260,7 @@ button {
         font-size: 13px;
         margin-left: 3px;
       }
+
       &:hover {
         color: $main-color;
       }
@@ -1165,10 +1290,12 @@ button {
       margin-bottom: 15px;
       margin-top: -5px;
     }
+
     p {
       margin-bottom: 30px;
       font-size: 18px;
     }
+
     img {
       width: 100px !important;
       height: 100px !important;
@@ -1177,10 +1304,12 @@ button {
       border-radius: 50%;
       margin-bottom: 15px;
     }
+
     h3 {
       font-size: 20px;
       margin-bottom: 3px;
     }
+
     span {
       display: block;
       font-size: 14px;
@@ -1190,6 +1319,7 @@ button {
   .owl-theme {
     .owl-nav {
       margin-top: 30px;
+
       .owl-prev,
       .owl-next {
         width: 35px;
@@ -1207,6 +1337,7 @@ button {
         i {
           line-height: 35px;
         }
+
         &:hover {
           color: $white-color !important;
           background-color: $orange-color !important;
@@ -1225,6 +1356,7 @@ button {
     top: 415px;
     right: -230px;
   }
+
   #contactForm {
     margin-bottom: 30px;
 
@@ -1244,11 +1376,13 @@ button {
           box-shadow: none;
         }
       }
+
       textarea {
         padding-top: 13px;
         height: auto !important;
       }
     }
+
     .common-btn {
       transition: $transition;
       width: 100%;
@@ -1257,17 +1391,20 @@ button {
       opacity: 1;
       border-radius: 0;
     }
+
     .list-unstyled {
       font-size: 14px;
       margin-top: 10px;
       color: #dc3545;
     }
+
     .text-danger {
       margin-bottom: 0;
       margin-top: 10px;
       font-size: 20px;
       color: #dc3545;
     }
+
     .text-success {
       margin-bottom: 0;
       margin-top: 10px;
@@ -1275,6 +1412,7 @@ button {
       color: #28a745;
     }
   }
+
   .contact-content {
     margin-bottom: 30px;
 
@@ -1284,6 +1422,7 @@ button {
       ul {
         padding: 0;
         margin: 0;
+
         li {
           list-style-type: none;
           display: block;
@@ -1292,11 +1431,13 @@ button {
           &:last-child {
             margin-bottom: 0;
           }
+
           span {
             display: inline-block;
             margin-right: 3px;
             font-weight: 600;
           }
+
           a {
             display: inline-block;
             color: $paragraph-color;
@@ -1308,10 +1449,12 @@ button {
         }
       }
     }
+
     .bottom {
       ul {
         padding: 0;
         margin: 0;
+
         li {
           list-style-type: none;
           display: inline-block;
@@ -1320,26 +1463,31 @@ button {
           &:last-child {
             margin-right: 0;
           }
+
           &:nth-child(2) {
             a {
               color: white;
             }
           }
+
           &:nth-child(3) {
             a {
               color: #0e76a8;
             }
           }
+
           &:nth-child(4) {
             a {
               color: #053eff;
             }
           }
+
           &:nth-child(5) {
             a {
               color: #ea4c89;
             }
           }
+
           a {
             display: block;
             color: $main-color;
@@ -1381,6 +1529,7 @@ button {
     }
   }
 }
+
 /*----- End Home Demo One CSS -----*/
 
 /*----- Home Demo Two CSS -----*/
@@ -1391,12 +1540,14 @@ button {
       color: $white-color;
     }
   }
-  .navbar-nav .active > .nav-link,
+
+  .navbar-nav .active>.nav-link,
   .navbar-nav .nav-link.active,
   .navbar-nav .nav-link.show,
-  .navbar-nav .show > .nav-link {
+  .navbar-nav .show>.nav-link {
     color: $yellow-color;
   }
+
   .navbar-nav .nav-link:focus,
   .navbar-nav .nav-link:hover {
     color: $yellow-color;
@@ -1422,6 +1573,7 @@ button {
     background-color: #000;
     opacity: 0.6;
   }
+
   .banner-shape-img {
     position: absolute;
     z-index: 1;
@@ -1432,6 +1584,7 @@ button {
     margin-left: auto;
     margin-right: auto;
   }
+
   .banner-content {
     text-align: center;
     position: relative;
@@ -1453,6 +1606,7 @@ button {
       opacity: 0.7;
       z-index: -1;
     }
+
     span {
       display: block;
       font-size: 30px;
@@ -1460,17 +1614,21 @@ button {
       margin-bottom: 10px;
       color: $white-color;
     }
+
     h1 {
       font-size: 80px;
       color: $yellow-color;
       margin-bottom: 30px;
     }
+
     .common-btn.two {
       margin-bottom: 30px;
     }
+
     ul {
       padding: 0;
       margin: 0;
+
       li {
         list-style-type: none;
         display: inline-block;
@@ -1502,6 +1660,7 @@ button {
       &:nth-child(1) {
         max-width: 435px;
       }
+
       &:nth-child(2) {
         max-width: 435px;
         margin-left: 105px;
@@ -1509,6 +1668,7 @@ button {
       }
     }
   }
+
   .about-content {
     margin-bottom: 30px;
   }
@@ -1523,6 +1683,7 @@ button {
     margin-right: auto;
   }
 }
+
 .gallery-item {
   position: relative;
   margin-bottom: 30px;
@@ -1537,11 +1698,13 @@ button {
       opacity: 0.5;
       visibility: visible;
     }
+
     .inner {
       opacity: 1;
       visibility: visible;
     }
   }
+
   &:before {
     position: absolute;
     content: "";
@@ -1555,10 +1718,12 @@ button {
     visibility: hidden;
     transition: $transition;
   }
+
   img {
     width: 100%;
     transition: $transition;
   }
+
   .inner {
     position: absolute;
     top: 50%;
@@ -1583,6 +1748,7 @@ button {
         }
       }
     }
+
     span {
       display: block;
       color: $yellow-color;
@@ -1601,12 +1767,14 @@ button {
       margin-left: auto;
       margin-right: auto;
     }
+
     p {
       max-width: 845px;
       margin-left: auto;
       margin-right: auto;
     }
   }
+
   .awards-inner {
     ul {
       li {
@@ -1614,22 +1782,26 @@ button {
           flex: 0 0 12%;
           max-width: 12%;
         }
+
         &:nth-child(2) {
           flex: 0 0 35%;
           max-width: 35%;
           margin-left: 10px;
         }
+
         &:nth-child(3) {
           flex: 0 0 45%;
           max-width: 45%;
           margin-left: 10px;
         }
+
         p {
           margin-bottom: 0;
         }
       }
     }
   }
+
   .video-wrap {
     a {
       color: $main-color;
@@ -1637,15 +1809,18 @@ button {
       &:before {
         background-color: $yellow-color;
       }
+
       &:after {
         background-color: $yellow-color;
       }
+
       &:hover {
         color: $white-color;
 
         &:before {
           background-color: $main-color;
         }
+
         &:after {
           background-color: $main-color;
         }
@@ -1662,12 +1837,14 @@ button {
     margin-right: auto;
     text-align: center;
   }
+
   .blog-item {
     .top {
       h4 {
         background-color: $yellow-color;
       }
     }
+
     .bottom {
       h3 {
         a {
@@ -1676,6 +1853,7 @@ button {
           }
         }
       }
+
       .blog-btn {
         color: $yellow-color;
 
@@ -1706,10 +1884,12 @@ button {
       h2 {
         color: $white-color;
       }
+
       p {
         color: $white-color;
       }
     }
+
     .form-group {
       margin-bottom: 15px;
 
@@ -1726,13 +1906,16 @@ button {
           border: 0;
         }
       }
+
       .react-datepicker-wrapper {
         width: 100%;
         display: block;
       }
+
       .react-datepicker-popper {
         z-index: 20;
       }
+
       .react-datepicker__triangle {
         left: 0 !important;
         right: 0 !important;
@@ -1740,6 +1923,7 @@ button {
         margin-right: auto !important;
       }
     }
+
     .common-btn.two {
       border-radius: 0;
       transition: $transition;
@@ -1756,6 +1940,7 @@ button {
     text-align: center;
     margin-bottom: 15px;
   }
+
   .review-item {
     background-image: url("../images/review/review-bg.png");
     background-size: cover;
@@ -1770,14 +1955,17 @@ button {
     i {
       color: $yellow-color;
     }
+
     p {
       font-weight: 600;
       color: $main-color;
     }
   }
+
   .owl-theme .owl-nav {
     margin-top: 5px;
   }
+
   .owl-prev {
     border: 1px solid $yellow-color !important;
     color: $yellow-color !important;
@@ -1787,6 +1975,7 @@ button {
       background-color: $yellow-color !important;
     }
   }
+
   .owl-next {
     border: 1px solid $yellow-color !important;
     color: $yellow-color !important;
@@ -1808,16 +1997,19 @@ button {
       margin-left: auto;
       margin-right: auto;
     }
+
     p {
       max-width: 845px;
       margin-left: auto;
       margin-right: auto;
     }
   }
+
   #contactForm {
     .form-group {
       margin-bottom: 15px;
     }
+
     .common-btn {
       color: $yellow-color;
       border: 2px solid $yellow-color;
@@ -1826,9 +2018,11 @@ button {
       &:before {
         background-color: $yellow-color;
       }
+
       &:after {
         background-color: $yellow-color;
       }
+
       &:hover {
         color: $white-color;
       }
@@ -1852,6 +2046,7 @@ button {
     }
   }
 }
+
 /*----- End Home Demo Two CSS -----*/
 
 /*----- Home Demo Three CSS -----*/
@@ -1885,6 +2080,7 @@ button {
       &:last-child {
         margin-bottom: 0;
       }
+
       a {
         display: inline-block;
         color: $white-color;
@@ -1963,6 +2159,7 @@ button {
       opacity: 0.8;
     }
   }
+
   &:hover {
     .aside-show-hide {
       opacity: 1;
@@ -1991,6 +2188,7 @@ button {
       line-height: 120px;
     }
   }
+
   .banner-content {
     position: relative;
     z-index: 2;
@@ -2004,6 +2202,7 @@ button {
         color: $green-color;
       }
     }
+
     p {
       color: $white-color;
       margin-bottom: 35px;
@@ -2012,6 +2211,7 @@ button {
         color: $green-color;
       }
     }
+
     .banner-btn.three {
       color: $main-color;
 
@@ -2029,14 +2229,17 @@ button {
       color: #b7b7b7;
     }
   }
+
   .about-content {
     ul {
       li {
         color: #b7b7b7;
         font-size: 14px;
+
         span {
           color: $white-color;
         }
+
         a {
           color: #b7b7b7;
 
@@ -2060,9 +2263,11 @@ button {
     &:hover {
       transform: translate(0, -10px);
     }
+
     .icon {
       color: $white-color;
     }
+
     h3 {
       a {
         color: $white-color;
@@ -2072,9 +2277,11 @@ button {
         }
       }
     }
+
     p {
       color: #b7b7b7;
     }
+
     .what-btn {
       color: $white-color;
 
@@ -2094,6 +2301,7 @@ button {
           span {
             color: $white-color;
           }
+
           p {
             color: #b7b7b7;
           }
@@ -2110,16 +2318,20 @@ button {
     height: 50%;
 
     .skill-list {
+      list-style: none;
       height: 50%;
+
       li {
-        
+        color: white;
       }
     }
   }
+
   .skill-wrap {
     overflow: hidden;
     padding-right: 15px;
   }
+
   .skill {
     margin-bottom: 30px;
     position: relative;
@@ -2127,6 +2339,7 @@ button {
     &:last-child {
       margin-bottom: 0;
     }
+
     &:before {
       position: absolute;
       content: "";
@@ -2138,12 +2351,14 @@ button {
       background: #ebeded;
       border-radius: 30px;
     }
+
     h3 {
       font-size: 16px;
       color: $white-color;
       margin-bottom: 10px;
     }
   }
+
   .skill-bar {
     width: 10%;
     height: 8px;
@@ -2179,11 +2394,13 @@ button {
       &:before {
         opacity: 0.5;
       }
+
       .inner {
         opacity: 1;
         visibility: visible;
       }
     }
+
     &:before {
       position: absolute;
       content: "";
@@ -2196,9 +2413,11 @@ button {
       z-index: 1;
       transition: $transition;
     }
+
     img {
       width: 100%;
     }
+
     .inner {
       position: absolute;
       left: 50%;
@@ -2222,12 +2441,14 @@ button {
           }
         }
       }
+
       span {
         display: block;
         color: $green-color;
         font-weight: 700;
       }
     }
+
     &.two {
       img {
         height: 364px;
@@ -2244,6 +2465,7 @@ button {
         background-color: $green-color;
       }
     }
+
     .bottom {
       h3 {
         a {
@@ -2254,9 +2476,11 @@ button {
           }
         }
       }
+
       p {
         color: #b7b7b7;
       }
+
       .blog-btn {
         color: $green-color;
 
@@ -2277,6 +2501,7 @@ button {
           span {
             color: $white-color;
           }
+
           a {
             color: #b7b7b7;
 
@@ -2287,6 +2512,7 @@ button {
         }
       }
     }
+
     .bottom {
       ul {
         li {
@@ -2323,38 +2549,44 @@ button {
 .navbar-light.four {
   background-color: $white-color;
 
-  .navbar-nav .active > .nav-link,
+  .navbar-nav .active>.nav-link,
   .navbar-nav .nav-link.active,
   .navbar-nav .nav-link.show,
-  .navbar-nav .show > .nav-link {
+  .navbar-nav .show>.nav-link {
     color: $blue-color;
   }
+
   .navbar-nav .nav-link:focus,
   .navbar-nav .nav-link:hover {
     color: $blue-color;
   }
+
   &.is-sticky {
     .navbar-nav {
       .nav-link {
         color: $main-color;
       }
     }
-    .navbar-nav .active > .nav-link,
+
+    .navbar-nav .active>.nav-link,
     .navbar-nav .nav-link.active,
     .navbar-nav .nav-link.show,
-    .navbar-nav .show > .nav-link {
+    .navbar-nav .show>.nav-link {
       color: $blue-color;
     }
+
     .navbar-nav .nav-link:focus,
     .navbar-nav .nav-link:hover {
       color: $blue-color;
     }
+
     .common-btn {
       &:before {
         border-top: 2px solid $blue-color;
         border-left: 2px solid $blue-color;
         border-bottom: 2px solid $blue-color;
       }
+
       &:after {
         border-top: 2px solid $blue-color;
         border-right: 2px solid $blue-color;
@@ -2382,6 +2614,7 @@ button {
       max-width: 690px;
     }
   }
+
   &:before {
     position: absolute;
     content: "";
@@ -2392,6 +2625,7 @@ button {
     background-color: $blue-color;
     opacity: 0.8;
   }
+
   .banner-content {
     position: relative;
     z-index: 1;
@@ -2402,12 +2636,14 @@ button {
       font-size: 30px;
       margin-bottom: 10px;
     }
+
     h1 {
       max-width: 100%;
       color: $white-color;
       font-size: 100px;
       margin-bottom: 5px;
     }
+
     p {
       color: $white-color;
       max-width: 575px;
@@ -2417,6 +2653,7 @@ button {
         font-weight: 700;
       }
     }
+
     .common-btn {
       color: $white-color;
       border: 2px solid $white-color;
@@ -2424,13 +2661,16 @@ button {
       &:before {
         background-color: $white-color;
       }
+
       &:after {
         background-color: $white-color;
       }
+
       &:hover {
         color: $blue-color;
       }
     }
+
     .banner-btn-area {
       .banner-btn {
         color: $blue-color;
@@ -2440,6 +2680,7 @@ button {
         }
       }
     }
+
     ul {
       li {
         a {
@@ -2459,16 +2700,19 @@ button {
     &:before {
       opacity: 0.5;
     }
+
     .inner {
       opacity: 1;
       visibility: visible;
     }
+
     .overlay {
       &:before {
         width: 80%;
         height: 90%;
         opacity: 1;
       }
+
       &:after {
         width: 80%;
         height: 90%;
@@ -2476,6 +2720,7 @@ button {
       }
     }
   }
+
   &:before {
     position: absolute;
     content: "";
@@ -2488,9 +2733,11 @@ button {
     z-index: 1;
     transition: $transition;
   }
+
   img {
     width: 100%;
   }
+
   .inner {
     position: absolute;
     left: 50%;
@@ -2514,6 +2761,7 @@ button {
       }
     }
   }
+
   .overlay {
     position: relative;
 
@@ -2530,6 +2778,7 @@ button {
       opacity: 0;
       transition: $transition;
     }
+
     &:after {
       position: absolute;
       content: "";
@@ -2556,16 +2805,19 @@ button {
       &:before {
         opacity: 0.5;
       }
+
       .inner {
         opacity: 1;
         visibility: visible;
       }
+
       .overlay {
         &:before {
           width: 80%;
           height: 90%;
           opacity: 1;
         }
+
         &:after {
           width: 80%;
           height: 90%;
@@ -2573,6 +2825,7 @@ button {
         }
       }
     }
+
     &:before {
       position: absolute;
       content: "";
@@ -2585,9 +2838,11 @@ button {
       z-index: 1;
       transition: $transition;
     }
+
     img {
       width: 100%;
     }
+
     .inner {
       position: absolute;
       left: 50%;
@@ -2611,12 +2866,14 @@ button {
           }
         }
       }
+
       span {
         display: block;
         color: $white-color;
         font-weight: 700;
       }
     }
+
     .overlay {
       position: relative;
 
@@ -2633,6 +2890,7 @@ button {
         opacity: 0;
         transition: $transition;
       }
+
       &:after {
         position: absolute;
         content: "";
@@ -2648,6 +2906,7 @@ button {
       }
     }
   }
+
   .case-study-content {
     padding: 50px 55px 55px;
     box-shadow: 0px 0px 20px 0px #dddddd8a;
@@ -2664,9 +2923,11 @@ button {
         }
       }
     }
+
     p {
       margin-bottom: 14px;
     }
+
     .case-study-btn {
       display: inline-block;
       color: $blue-color;
@@ -2679,11 +2940,13 @@ button {
         font-size: 14px;
         margin-left: 3px;
       }
+
       &:hover {
         color: $main-color;
       }
     }
   }
+
   .common-btn {
     margin-top: 30px;
   }
@@ -2698,6 +2961,7 @@ button {
       font-size: 38px;
     }
   }
+
   .about-img-two {
     margin-bottom: 30px;
     position: relative;
@@ -2707,6 +2971,7 @@ button {
       position: relative;
       top: -3px;
     }
+
     &:before {
       position: absolute;
       content: "";
@@ -2728,11 +2993,13 @@ button {
   .section-title.four {
     margin-bottom: 15px;
   }
+
   .review-item {
     i {
       color: $blue-color;
     }
   }
+
   .owl-prev {
     border: 1px solid $blue-color !important;
     color: $blue-color !important;
@@ -2745,6 +3012,7 @@ button {
       background-color: $blue-color !important;
     }
   }
+
   .owl-next {
     border: 1px solid $blue-color !important;
     color: $blue-color !important;
@@ -2757,14 +3025,17 @@ button {
       background-color: $blue-color !important;
     }
   }
+
   .owl-theme .owl-dots .owl-dot span {
     background: transparent;
     border: 1px solid $blue-color;
   }
+
   .owl-theme .owl-dots .owl-dot.active span,
   .owl-theme .owl-dots .owl-dot:hover span {
     background: $blue-color;
   }
+
   .owl-dots {
     margin-bottom: -10px;
   }
@@ -2778,6 +3049,7 @@ button {
         background-color: $blue-color;
       }
     }
+
     .bottom {
       h3 {
         a {
@@ -2786,6 +3058,7 @@ button {
           }
         }
       }
+
       .blog-btn {
         color: $blue-color;
 
@@ -2830,31 +3103,36 @@ button {
     }
   }
 }
+
 /*----- End Home Demo Four CSS -----*/
 
 /*----- Home Demo Five CSS -----*/
 .body-bg-five {
   background-color: #121212;
 }
+
 /*-- Navbar --*/
 .navbar-light.five {
   background-color: #111111;
 
-  .navbar-nav .active > .nav-link,
+  .navbar-nav .active>.nav-link,
   .navbar-nav .nav-link.active,
   .navbar-nav .nav-link.show,
-  .navbar-nav .show > .nav-link {
+  .navbar-nav .show>.nav-link {
     color: $pink-color;
   }
+
   .navbar-nav .nav-link:focus,
   .navbar-nav .nav-link:hover {
     color: $pink-color;
   }
+
   .navbar-nav {
     .nav-link {
       color: $white-color;
     }
   }
+
   &.is-sticky {
     box-shadow: 0px 0px 20px 0px #dddddd26;
   }
@@ -2882,12 +3160,14 @@ button {
       display: block;
       margin-top: -10px;
     }
+
     h1 {
       max-width: 100%;
       color: $white-color;
       font-size: 100px;
       margin-bottom: 0;
     }
+
     p {
       color: $white-color;
       max-width: 240px;
@@ -2897,6 +3177,7 @@ button {
         font-weight: 700;
       }
     }
+
     .banner-btn-area {
       margin-bottom: 0;
 
@@ -2908,12 +3189,14 @@ button {
         }
       }
     }
+
     .banner-img {
       position: absolute;
       right: -45px;
       bottom: 0;
       max-width: 625px;
     }
+
     .banner-social-text {
       position: absolute;
       top: 45px;
@@ -2922,6 +3205,7 @@ button {
       ul {
         padding: 0;
         margin: 0;
+
         li {
           list-style-type: none;
           display: block;
@@ -2931,6 +3215,7 @@ button {
           &:last-child {
             margin-bottom: 0;
           }
+
           a {
             display: block;
             font-weight: 600;
@@ -2944,6 +3229,7 @@ button {
         }
       }
     }
+
     .banner-email {
       position: absolute;
       top: 235px;
@@ -2966,6 +3252,7 @@ button {
           top: 15px;
           left: 0;
         }
+
         &:hover {
           color: $pink-color;
         }
@@ -2973,6 +3260,7 @@ button {
     }
   }
 }
+
 .lines {
   position: absolute;
   top: 0;
@@ -2996,18 +3284,23 @@ button {
     &:nth-child(1) {
       margin-left: -25%;
     }
+
     &:nth-child(2) {
       margin-left: -50%;
     }
+
     &:nth-child(3) {
       margin-left: 25%;
     }
+
     &:nth-child(4) {
       margin-left: 50%;
     }
+
     &:nth-child(5) {
       margin-left: 0%;
     }
+
     &:after {
       content: "";
       display: block;
@@ -3016,22 +3309,22 @@ button {
       width: 100%;
       top: -50%;
       left: 0;
-      background: linear-gradient(
-        180deg,
-        hsla(0, 0%, 100%, 0) 0,
-        #fff 75%,
-        #fff
-      );
+      background: linear-gradient(180deg,
+          hsla(0, 0%, 100%, 0) 0,
+          #fff 75%,
+          #fff);
       animation: run 7s 0s infinite;
       animation-fill-mode: forwards;
       animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
     }
   }
 }
+
 @keyframes run {
   0% {
     top: -50%;
   }
+
   to {
     top: 110%;
   }
@@ -3042,6 +3335,7 @@ button {
   .case-study-img {
     margin-bottom: 30px;
   }
+
   .case-study-content {
     box-shadow: none;
     padding: 0 0 0;
@@ -3056,9 +3350,11 @@ button {
         }
       }
     }
+
     p {
       color: #b7b7b7;
     }
+
     .case-study-btn {
       color: $pink-color;
 
@@ -3067,6 +3363,7 @@ button {
       }
     }
   }
+
   .common-btn.five {
     margin-top: 0;
   }
@@ -3084,9 +3381,11 @@ button {
       transform: translate(0, -10px);
       box-shadow: 0px 0px 20px 0px #0b0d0e;
     }
+
     .icon {
       color: $white-color;
     }
+
     h3 {
       a {
         color: $white-color;
@@ -3096,9 +3395,11 @@ button {
         }
       }
     }
+
     p {
       color: #b7b7b7;
     }
+
     .what-btn {
       color: $white-color;
 
@@ -3114,6 +3415,7 @@ button {
   .about-img-three {
     margin-bottom: 30px;
   }
+
   .section-title.five {
     text-align: left;
 
@@ -3121,6 +3423,7 @@ button {
       color: #b7b7b7;
     }
   }
+
   .about-content {
     margin-bottom: 30px;
 
@@ -3131,6 +3434,7 @@ button {
         span {
           color: $white-color;
         }
+
         a {
           color: #b7b7b7;
 
@@ -3155,6 +3459,7 @@ button {
   &.mt5 {
     margin-top: 30px;
   }
+
   img {
     position: absolute;
     top: 0;
@@ -3162,11 +3467,13 @@ button {
     max-width: 225px;
     z-index: -1;
   }
+
   h3 {
     font-size: 40px;
     color: $pink-color;
     margin-bottom: 3px;
   }
+
   p {
     margin-bottom: 0;
     color: $white-color;
@@ -3183,6 +3490,7 @@ button {
   &.mt5 {
     margin-top: 35px;
   }
+
   .top {
     span {
       display: block;
@@ -3192,6 +3500,7 @@ button {
       padding-bottom: 25px;
     }
   }
+
   .middle {
     background-color: #262626;
     padding-top: 20px;
@@ -3208,6 +3517,7 @@ button {
       }
     }
   }
+
   .end {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -3238,6 +3548,7 @@ button {
         background-color: $pink-color;
       }
     }
+
     .bottom {
       h3 {
         a {
@@ -3248,9 +3559,11 @@ button {
           }
         }
       }
+
       p {
         color: #b7b7b7;
       }
+
       .blog-btn {
         color: $pink-color;
 
@@ -3260,6 +3573,7 @@ button {
       }
     }
   }
+
   .blog-thumb-item {
     margin-bottom: 30px;
 
@@ -3279,11 +3593,13 @@ button {
           max-width: 20%;
           text-align: center;
         }
+
         &:nth-child(2) {
           flex: 0 0 70%;
           max-width: 70%;
           margin-left: 20px;
         }
+
         span {
           display: inline-block;
           color: #fff;
@@ -3296,6 +3612,7 @@ button {
           font-weight: 600;
           padding: 3px 0 5px;
         }
+
         h3 {
           margin-bottom: 5px;
           font-size: 18px;
@@ -3309,6 +3626,7 @@ button {
             }
           }
         }
+
         .blog-btn {
           display: inline-block;
           color: $pink-color;
@@ -3338,18 +3656,23 @@ button {
     i {
       color: $white-color;
     }
+
     p {
       color: $pink-color;
     }
+
     h3 {
       color: $white-color;
     }
+
     span {
       color: #b7b7b7;
     }
   }
+
   .owl-theme {
     .owl-nav {
+
       .owl-prev,
       .owl-next {
         border: 1px solid $pink-color !important;
@@ -3373,6 +3696,7 @@ button {
           span {
             color: $white-color;
           }
+
           a {
             color: #b7b7b7;
 
@@ -3383,6 +3707,7 @@ button {
         }
       }
     }
+
     .bottom {
       ul {
         li {
@@ -3413,6 +3738,7 @@ button {
     }
   }
 }
+
 /*----- End Home Demo Five CSS -----*/
 
 /*----- Home Demo Six CSS -----*/
@@ -3420,21 +3746,24 @@ button {
 .navbar-light.six {
   background-color: #111111;
 
-  .navbar-nav .active > .nav-link,
+  .navbar-nav .active>.nav-link,
   .navbar-nav .nav-link.active,
   .navbar-nav .nav-link.show,
-  .navbar-nav .show > .nav-link {
+  .navbar-nav .show>.nav-link {
     color: $white-color;
   }
+
   .navbar-nav .nav-link:focus,
   .navbar-nav .nav-link:hover {
     color: $white-color;
   }
+
   .navbar-nav {
     .nav-link {
       color: $grey-color;
     }
   }
+
   &.is-sticky {
     box-shadow: 0px 0px 20px 0px #dddddd26;
   }
@@ -3458,6 +3787,7 @@ button {
     background-color: #121212;
     opacity: 0.7;
   }
+
   .banner-content {
     text-align: center;
     position: relative;
@@ -3470,12 +3800,14 @@ button {
       margin-bottom: 10px;
       display: block;
     }
+
     h1 {
       color: $white-color;
       max-width: 100%;
       margin-bottom: 30px;
     }
   }
+
   .lines {
     z-index: 0;
   }
@@ -3490,9 +3822,11 @@ button {
       color: $grey-color;
     }
   }
+
   .about-img-three {
     margin-bottom: 30px;
   }
+
   .about-content {
     margin-bottom: 30px;
 
@@ -3503,6 +3837,7 @@ button {
         span {
           color: $white-color;
         }
+
         a {
           color: $grey-color;
 
@@ -3524,6 +3859,7 @@ button {
       width: 100%;
       margin-bottom: 20px;
     }
+
     h3 {
       a {
         color: $white-color;
@@ -3533,9 +3869,11 @@ button {
         }
       }
     }
+
     p {
       color: $grey-color;
     }
+
     .what-btn {
       color: $white-color;
 
@@ -3552,6 +3890,7 @@ button {
     h3 {
       color: $white-color;
     }
+
     p {
       color: $grey-color;
     }
@@ -3571,11 +3910,13 @@ button {
       filter: grayscale(0%);
     }
   }
+
   img {
     width: 100%;
     filter: grayscale(100%);
     transition: $transition;
   }
+
   .inner {
     padding: 30px 30px 30px;
 
@@ -3585,6 +3926,7 @@ button {
       color: $grey-color;
       margin-bottom: 8px;
     }
+
     h3 {
       margin-bottom: 0;
       font-size: 20px;
@@ -3607,6 +3949,7 @@ button {
       color: $main-color;
     }
   }
+
   .owl-prev {
     border: 1px solid $grey-color !important;
     color: $grey-color !important;
@@ -3616,6 +3959,7 @@ button {
       background-color: $grey-color !important;
     }
   }
+
   .owl-next {
     border: 1px solid $grey-color !important;
     color: $grey-color !important;
@@ -3652,6 +3996,7 @@ button {
         color: $main-color;
       }
     }
+
     .bottom {
       h3 {
         a {
@@ -3662,9 +4007,11 @@ button {
           }
         }
       }
+
       p {
         color: $grey-color;
       }
+
       .blog-btn {
         color: $white-color;
 
@@ -3685,6 +4032,7 @@ button {
           span {
             color: $white-color;
           }
+
           a {
             color: $grey-color;
 
@@ -3695,6 +4043,7 @@ button {
         }
       }
     }
+
     .bottom {
       ul {
         li {
@@ -3725,6 +4074,7 @@ button {
     }
   }
 }
+
 /*----- End Home Demo Six CSS -----*/
 
 /*----- Work Details CSS -----*/
@@ -3739,6 +4089,7 @@ button {
         border-left: 2px solid $orange-color;
         border-bottom: 2px solid $orange-color;
       }
+
       &:after {
         border-top: 2px solid $orange-color;
         border-right: 2px solid $orange-color;
@@ -3746,22 +4097,26 @@ button {
       }
     }
   }
+
   .navbar-nav {
     .nav-link {
       color: $white-color;
     }
+
     .nav-link:focus,
     .nav-link:hover {
       color: $orange-color;
     }
   }
-  .navbar-nav .active > .nav-link,
+
+  .navbar-nav .active>.nav-link,
   .navbar-nav .nav-link.active,
   .navbar-nav .nav-link.show,
-  .navbar-nav .show > .nav-link {
+  .navbar-nav .show>.nav-link {
     color: $orange-color;
   }
 }
+
 .page-title-area {
   height: 440px;
   position: relative;
@@ -3783,12 +4138,14 @@ button {
       top: 130px;
       z-index: -1;
     }
+
     h1 {
       font-size: 80px;
       margin-bottom: 15px;
       position: relative;
       z-index: 2;
     }
+
     ul {
       position: relative;
       z-index: 2;
@@ -3800,6 +4157,7 @@ button {
         display: inline-block;
         margin-right: 20px;
         position: relative;
+
         &:last-child {
           margin-right: 0;
         }
@@ -3813,11 +4171,13 @@ button {
           height: 1px;
           background-color: $paragraph-color;
         }
+
         &:last-child {
           &:before {
             display: none;
           }
         }
+
         a {
           display: block;
           color: $paragraph-color;
@@ -3829,6 +4189,7 @@ button {
       }
     }
   }
+
   .lines {
     .line {
       background: #75757529;
@@ -3839,12 +4200,14 @@ button {
     }
   }
 }
+
 .work-details-area {
   .details-img {
     img {
       width: 100%;
       margin-bottom: 30px;
     }
+
     .details-img-inner {
       margin-bottom: 30px;
 
@@ -3852,9 +4215,11 @@ button {
         font-size: 20px;
         margin-bottom: 5px;
       }
+
       ul {
         padding: 0;
         margin: 0;
+
         li {
           list-style-type: none;
           display: block;
@@ -3867,6 +4232,7 @@ button {
       }
     }
   }
+
   .details-description {
     padding-bottom: 30px;
 
@@ -3874,6 +4240,7 @@ button {
       font-size: 20px;
       margin-bottom: 15px;
     }
+
     p {
       margin-bottom: 25px;
 
@@ -3881,10 +4248,12 @@ button {
         margin-bottom: 0;
       }
     }
+
     .img {
       margin-bottom: 30px;
     }
   }
+
   .contact-area {
     margin-top: -5px;
 
@@ -3896,6 +4265,7 @@ button {
     }
   }
 }
+
 .details-pages {
   padding: 10px 15px;
   background-color: #f5f5f5;
@@ -3905,9 +4275,11 @@ button {
     &.two {
       text-align: center;
     }
+
     &.three {
       text-align: right;
     }
+
     .pre-project {
       display: inline-block;
       color: $main-color;
@@ -3915,11 +4287,13 @@ button {
       &:hover {
         color: $orange-color;
       }
+
       i {
         display: inline-block;
         transform: rotate(180deg);
       }
     }
+
     .next-project {
       display: inline-block;
       color: $main-color;
@@ -3927,15 +4301,18 @@ button {
       &:hover {
         color: $orange-color;
       }
+
       i {
         display: inline-block;
       }
     }
   }
 }
+
 .copyright-area.seven {
   border-top: 1px solid #f1f1f1;
 }
+
 /*----- End Work Details CSS -----*/
 
 /*----- Case Study Details CSS -----*/
@@ -3944,6 +4321,7 @@ button {
     .img {
       margin-bottom: 30px;
     }
+
     .details-img-right {
       .details-img-inner {
         margin-bottom: 30px;
@@ -3952,9 +4330,11 @@ button {
           font-size: 20px;
           margin-bottom: 5px;
         }
+
         ul {
           padding: 0;
           margin: 0;
+
           li {
             list-style-type: none;
             display: block;
@@ -3968,6 +4348,7 @@ button {
       }
     }
   }
+
   .details-about {
     margin-bottom: 30px;
 
@@ -3975,10 +4356,12 @@ button {
       font-size: 20px;
       margin-bottom: 10px;
     }
+
     p {
       margin-bottom: 0;
     }
   }
+
   .details-goal {
     margin-bottom: 30px;
 
@@ -3986,9 +4369,11 @@ button {
       font-size: 20px;
       margin-bottom: 10px;
     }
+
     ul {
       padding: 0;
       margin: 0;
+
       li {
         list-style-type: none;
         display: block;
@@ -3997,6 +4382,7 @@ button {
         &:last-child {
           margin-bottom: 0;
         }
+
         i {
           display: inline-block;
           color: $orange-color;
@@ -4008,6 +4394,7 @@ button {
       }
     }
   }
+
   .details-problem {
     padding-bottom: 30px;
 
@@ -4015,6 +4402,7 @@ button {
       font-size: 20px;
       margin-bottom: 10px;
     }
+
     p {
       margin-bottom: 30px;
 
@@ -4022,6 +4410,7 @@ button {
         margin-bottom: 0;
       }
     }
+
     .img {
       margin-bottom: 30px;
 
@@ -4030,6 +4419,7 @@ button {
       }
     }
   }
+
   .contact-area {
     margin-top: -5px;
 
@@ -4041,6 +4431,7 @@ button {
     }
   }
 }
+
 /*----- End Case Study Details CSS -----*/
 
 /*----- Blog Details CSS -----*/
@@ -4052,6 +4443,7 @@ button {
       width: 100%;
     }
   }
+
   .details-img-info {
     padding-bottom: 30px;
 
@@ -4068,6 +4460,7 @@ button {
         &:last-child {
           margin-right: 0;
         }
+
         a {
           display: inline-block;
           color: $paragraph-color;
@@ -4078,10 +4471,12 @@ button {
         }
       }
     }
+
     h2 {
       font-size: 32px;
       margin-bottom: 15px;
     }
+
     p {
       margin-bottom: 30px;
 
@@ -4089,10 +4484,12 @@ button {
         margin-bottom: 0;
       }
     }
+
     h3 {
       font-size: 20px;
       margin-bottom: 10px;
     }
+
     .item {
       margin-bottom: 20px;
       padding: 0;
@@ -4105,6 +4502,7 @@ button {
         &:last-child {
           margin-bottom: 0;
         }
+
         i {
           display: inline-block;
           color: $orange-color;
@@ -4115,6 +4513,7 @@ button {
         }
       }
     }
+
     .img {
       margin-bottom: 20px;
 
@@ -4123,6 +4522,7 @@ button {
       }
     }
   }
+
   .details-comments {
     padding-bottom: 50px;
 
@@ -4134,9 +4534,11 @@ button {
         color: $paragraph-color;
       }
     }
+
     ul {
       padding: 0;
       margin: 0;
+
       li {
         list-style-type: none;
         display: block;
@@ -4147,23 +4549,28 @@ button {
         &:last-child {
           margin-bottom: 0;
         }
+
         img {
           position: absolute;
           top: 0;
           left: 0;
         }
+
         h4 {
           font-size: 16px;
           margin-bottom: 5px;
         }
+
         span {
           display: block;
           font-size: 15px;
           margin-bottom: 8px;
         }
+
         p {
           margin-bottom: 0;
         }
+
         a {
           display: inline-block;
           color: $main-color;
@@ -4179,11 +4586,13 @@ button {
       }
     }
   }
+
   .details-leave {
     h3 {
       font-size: 20px;
       margin-bottom: 30px;
     }
+
     .form-group {
       margin-bottom: 15px;
 
@@ -4200,11 +4609,13 @@ button {
           border: 0;
         }
       }
+
       textarea {
         height: auto !important;
         padding-top: 13px;
       }
     }
+
     .common-btn {
       border-radius: 0;
       width: 100%;
@@ -4214,6 +4625,7 @@ button {
     }
   }
 }
+
 .widget-area {
   margin-top: 30px;
 
@@ -4224,10 +4636,12 @@ button {
       font-size: 20px;
       margin-bottom: 15px;
     }
+
     &:last-child {
       margin-bottom: 0;
     }
   }
+
   .search {
     position: relative;
 
@@ -4244,6 +4658,7 @@ button {
         border: 0;
       }
     }
+
     .btn {
       padding: 0;
       position: absolute;
@@ -4257,6 +4672,7 @@ button {
       }
     }
   }
+
   .recent {
     .recent-inner {
       margin-bottom: 30px;
@@ -4264,6 +4680,7 @@ button {
       &:last-child {
         margin-bottom: 0;
       }
+
       ul {
         display: flex;
         flex-wrap: wrap;
@@ -4278,16 +4695,19 @@ button {
             flex: 0 0 25%;
             max-width: 25%;
           }
+
           &:nth-child(2) {
             flex: 0 0 65%;
             max-width: 65%;
             margin-left: 15px;
           }
+
           h3 {
             margin-bottom: 5px;
             font-size: 15px;
             line-height: 1.5;
           }
+
           a {
             display: inline-block;
             color: $orange-color;
@@ -4305,13 +4725,16 @@ button {
       }
     }
   }
+
   .tags {
     h3 {
       margin-bottom: 7px;
     }
+
     ul {
       padding: 0;
       margin: 0;
+
       li {
         list-style-type: none;
         display: inline-block;
@@ -4333,6 +4756,7 @@ button {
     }
   }
 }
+
 /*----- End Blog Details CSS -----*/
 
 /*----- Service Details CSS -----*/
@@ -4341,6 +4765,7 @@ button {
     width: 100%;
     margin-bottom: 20px;
   }
+
   p {
     margin-bottom: 30px;
 
@@ -4348,10 +4773,12 @@ button {
       margin-bottom: 0;
     }
   }
+
   h3 {
     font-size: 20px;
     margin-bottom: 10px;
   }
+
   .item {
     margin-bottom: 15px;
     padding: 0;
@@ -4364,6 +4791,7 @@ button {
       &:last-child {
         margin-bottom: 0;
       }
+
       i {
         display: inline-block;
         color: $orange-color;
@@ -4374,6 +4802,7 @@ button {
       }
     }
   }
+
   .contact-area {
     .section-title {
       text-align: center;
@@ -4383,6 +4812,7 @@ button {
     }
   }
 }
+
 /*-- Review --*/
 .review-area.three {
   .review-item {
@@ -4393,6 +4823,7 @@ button {
       color: $green-color !important;
     }
   }
+
   .owl-theme {
     .owl-nav {
       margin-top: 30px;
@@ -4411,6 +4842,7 @@ button {
     }
   }
 }
+
 /*----- End Service Details CSS -----*/
 
 /*----- Demos Wrap -----*/
@@ -4437,12 +4869,14 @@ button {
       padding: 10px 7px;
       border-radius: 5px 0 0 5px;
       transition: $transition;
+
       &:hover {
         background-color: #0a060e;
       }
     }
   }
 }
+
 .demos-side-content {
   position: fixed;
   top: 0;
@@ -4467,17 +4901,21 @@ button {
       font-weight: 600;
       margin-bottom: 0;
     }
+
     .close {
       margin: -20px -1rem -1rem auto;
     }
   }
+
   .modal-body {
     padding: 30px 30px 25px;
+
     ul {
       margin: 0;
       padding: 0;
       display: flex;
       flex-wrap: wrap;
+
       li {
         list-style-type: none;
         display: inline-block;
@@ -4489,6 +4927,7 @@ button {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+
         .demo-item {
           a {
             display: block;
@@ -4497,6 +4936,7 @@ button {
             box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
             z-index: 1;
             position: relative;
+
             span {
               color: $white-color;
               position: absolute;
@@ -4511,6 +4951,7 @@ button {
               transition: $transition;
               opacity: 0;
             }
+
             &:before {
               position: absolute;
               content: "";
@@ -4524,12 +4965,15 @@ button {
               transition: $transition;
             }
           }
+
           &:hover {
             a {
               box-shadow: none;
+
               span {
                 opacity: 1;
               }
+
               &:before {
                 opacity: 0.9;
               }
@@ -4540,6 +4984,7 @@ button {
     }
   }
 }
+
 /*----- End Demos Wrap -----*/
 
 /*----- Go Top CSS -----*/
@@ -4577,12 +5022,14 @@ button {
       top: 60%;
     }
   }
+
   &.active {
     bottom: 15px;
     transform: translateY(-1%);
     opacity: 1;
     visibility: visible;
   }
+
   &:hover,
   &:focus {
     color: #ffffff;
@@ -4595,6 +5042,7 @@ button {
         top: 0;
         visibility: hidden;
       }
+
       &:last-child {
         opacity: 1;
         visibility: visible;
@@ -4603,6 +5051,7 @@ button {
     }
   }
 }
+
 /*----- End Go Top CSS -----*/
 
 /*----- Preloader CSS -----*/
@@ -4615,6 +5064,7 @@ button {
   z-index: 99999;
   background: $main-color;
 }
+
 .preloader__wrapper {
   position: absolute;
   top: 50%;
@@ -4623,6 +5073,7 @@ button {
   width: 200px;
   height: 200px;
 }
+
 .preloader__circle {
   width: 100%;
   height: 100%;
@@ -4631,6 +5082,7 @@ button {
   position: relative;
   transition: 0.3s ease;
 }
+
 .preloader__circle-line {
   animation: rotate 3.5s ease-in-out infinite;
   border-top: 1px solid transparent;
@@ -4642,64 +5094,77 @@ button {
   left: 50%;
   top: 50%;
 }
+
 .preloader__circle-line--1 {
   width: 90px;
   height: 90px;
   animation-duration: 1s;
 }
+
 .preloader__circle-line--2 {
   width: 80px;
   height: 80px;
   animation-duration: 2s;
 }
+
 .preloader__circle-line--3 {
   width: 70px;
   height: 70px;
   animation-duration: 3s;
 }
+
 .preloader__circle-line--4 {
   width: 60px;
   height: 60px;
   animation-duration: 4s;
 }
+
 .preloader__circle-line--5 {
   width: 50px;
   height: 50px;
   animation-duration: 5s;
 }
+
 .preloader__circle-line--6 {
   width: 40px;
   height: 40px;
   animation-duration: 6s;
 }
+
 .preloader__circle-line--7 {
   width: 30px;
   height: 30px;
   animation-duration: 7s;
 }
+
 .preloader__circle-line--8 {
   width: 20px;
   height: 20px;
   animation-duration: 8s;
 }
+
 .preloader__circle-line--9 {
   width: 10px;
   height: 10px;
   animation-duration: 9s;
 }
+
 .preloader__circle-line--10 {
   width: 0px;
   height: 0px;
   animation-duration: 10s;
 }
+
 @keyframes rotate {
   from {
     transform: translate(-50%, -50%) rotate(0);
   }
+
   to {
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
 /*----- End Preloader CSS -----*/
 
 .top-header {
@@ -4717,8 +5182,10 @@ button {
     margin: 0;
     list-style-type: none;
     text-align: right;
+
     li {
       display: inline-block;
+
       a {
         color: $white-color;
         font-weight: 600;
@@ -4768,6 +5235,7 @@ button {
         padding: 0 4rem 1rem 0;
       }
     }
+
     td {
       color: rgb(192, 192, 192);
 
