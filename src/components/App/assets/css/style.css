@@ -4760,7 +4760,7 @@ button:focus {
   bottom: 0;
   right: 15px;
   color: #ffffff;
-  background-color: #f68338;
+  background-color: #4bffa5;
   z-index: 4;
   width: 45px;
   text-align: center;
@@ -4770,7 +4770,7 @@ button:focus {
   -webkit-transition: 0.9s;
   transition: 0.9s;
   border-radius: 50%;
-  border: 1px solid #f68338;
+  border: 1px solid #4d4d4d;
 }
 
 .go-top i {

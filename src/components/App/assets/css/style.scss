@@ -4549,7 +4549,7 @@ button {
   bottom: 0;
   right: 15px;
   color: #ffffff;
-  background-color: $orange-color;
+  background-color: $green-color;
   z-index: 4;
   width: 45px;
   text-align: center;
@@ -4558,7 +4558,7 @@ button {
   visibility: hidden;
   transition: 0.9s;
   border-radius: 50%;
-  border: 1px solid $orange-color;
+  border: 1px solid rgb(77, 77, 77);
 
   i {
     position: absolute;
