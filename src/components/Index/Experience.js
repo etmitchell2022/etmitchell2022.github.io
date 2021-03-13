@@ -56,7 +56,7 @@ const Experience = () => {
                 <p>
                   Helped manage day-to-day operations for a 20-member team.
                   Responsible for driving equpiment and customers to and from
-                  certain location.
+                  certain locations.
                 </p>
               </li>
             </ul>
