@@ -2,7 +2,10 @@ import React from "react"
 
 const Experience = () => {
   return (
-    <div className="experience-area three border-bottom-two ptb-100" id='experience'>
+    <div
+      className="experience-area three border-bottom-two ptb-100"
+      id="experience"
+    >
       <div className="container">
         <div className="section-title three">
           <span className="sub-title">WORK EXPERIENCE</span>
@@ -18,7 +21,12 @@ const Experience = () => {
                 <span>Software Engineer Intern at DeveloperTown</span>
               </li>
               <li>
-                <p>I will be working on the front-end engineering team.</p>
+                <p>
+                  I worked with the frontend team and gained great experience
+                  working with React and Typescript. I created a CLI tool that
+                  will automatically turn Figma designs into React components
+                  using MaterialUI.
+                </p>
               </li>
             </ul>
           </div>

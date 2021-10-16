@@ -17,8 +17,9 @@ const About = () => {
               <div className="section-title three">
                 <span className="sub-title">ABOUT ME</span>
                 <p>
-                  I have always had a passion for technology and I enjoy problem solving. When I graduate
-                  in December, I plan to become a software engineer. I am excited to enter the field and continue learning.
+                  I have always had a passion for technology and I am looking
+                  forward to working as a software engineer. Upon graduating, I
+                  will be joining the frontend team at DeveloperTown.
                 </p>
               </div>
 
@@ -27,13 +28,9 @@ const About = () => {
                   <div className="left">
                     <ul>
                       <li>
-                        <span>Age:</span>
-                        20
-                      </li>
-                      <li>
-                        <span>Website:</span>
-                        <a href="etmitchell.com" target="_blank">
-                          www.etmitchell.com
+                        <span>Email:</span>
+                        <a href="mailto:etmitchell@bsu.edu">
+                          etmitchell@bsu.edu
                         </a>
                       </li>
                     </ul>
@@ -46,12 +43,6 @@ const About = () => {
                       <li>
                         <span>Phone:</span>
                         <a href="tel:+00932123456">937-248-4780</a>
-                      </li>
-                      <li>
-                        <span>Email:</span>
-                        <a href="mailto:etmitchell@bsu.edu">
-                          etmitchell@bsu.edu
-                        </a>
                       </li>
                     </ul>
                   </div>
